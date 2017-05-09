@@ -17,7 +17,7 @@ body a {
 body a:hover {
     color: #F5975F;
 }
-#btn {
+#clean {
     width: 64px;
     height: 64px;
     cursor: pointer;
@@ -30,17 +30,6 @@ body a:hover {
     -webkit-user-drag: none;
 }
 
-#btn:hover {
+#clean:hover {
     opacity: 0.5;
-}
-
-button {
-    color: #fff;
-    background-color: #d9534f;
-    border-color: #d43f3a;
-    border-radius: 10px;
-    width: 250px;
-    margin-top: 30px;
-    padding: 10px;
-    cursor: pointer;
 }

@@ -3,7 +3,7 @@
  */
 
 window.onload = function () {
-    document.getElementById('btn')
+    document.getElementById('clean')
         .addEventListener('click', function () {
             chrome.downloads.search({
                 "exists" : false,
