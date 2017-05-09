@@ -1,6 +1,6 @@
 {
   "name" : "DCleaner",
-  "description" : "Clean removed files from download history at the click of a button",
+  "description" : "Clean deleted files from download history at the click of a button",
   "version" : "1.0",
   "manifest_version" : 2,
   "browser_action" : {
