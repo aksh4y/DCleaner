@@ -1,5 +1,5 @@
 # DCleaner
-Chrome extension to remove deleted files from download history at the click of a button
+A simple chrome extension to remove deleted files from download history at the click of a button
 
 ![DCleaner](DCleaner.png)
 
