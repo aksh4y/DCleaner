@@ -6,7 +6,7 @@ window.onload = function () {
     document.getElementById('clean')
         .addEventListener('click', function () {
             chrome.downloads.search({
-                "exists" : false,
+                "exists" : false
             } , function (downloadedItem) {
                 if(downloadedItem.length === 0)
                     chrome.browserAction.setBadgeText({text: ""});
