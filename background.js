@@ -8,13 +8,22 @@ window.onload = function () {
 };
 
 function checkCount() {
+    var count = 0;
     chrome.downloads.search({
-        "exists" : false,
-        orderBy: ['-startTime']
+        "exists" : false
     } , function (downloadedItem) {
         if(downloadedItem.length > 0) {
-            chrome.browserAction.setBadgeBackgroundColor({color: "red"});
-            chrome.browserAction.setBadgeText({text: ""+ downloadedItem.length});
+            count = downloadedItem.length;
+            chrome.browserAction.setBadgeBackgroundColor({color: "DimGray"});
+            chrome.browserAction.setBadgeText({text: "" + count});
         }
+        chrome.downloads.search({
+            "state" : "interrupted"
+        }, function (downloadedItem) {
+            if(downloadedItem.length > 0) {
+                chrome.browserAction.setBadgeBackgroundColor({color: "DimGray"});
+                chrome.browserAction.setBadgeText({text: "" + Number(count + downloadedItem.length)});
+            }
+        });
     });
 }

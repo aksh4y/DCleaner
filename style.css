@@ -14,9 +14,14 @@ body a {
     font-family: "Calibri Light", sans-serif;
 }
 
+body form {
+    text-align: justify;
+}
+
 body a:hover {
     color: #F5975F;
 }
+
 #clean {
     width: 64px;
     height: 64px;
