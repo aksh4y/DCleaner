@@ -3,6 +3,8 @@ body, body > a {
     width: 200px;
     height: 100px;
     background-color: #455a64;
+    background: url('bg.jpg');
+    background-repeat: repeat repeat;
     color: wheat;
     text-align: center;
     font-family: 'Calibri Light', sans-serif;
