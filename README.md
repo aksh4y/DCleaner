@@ -3,6 +3,8 @@ A simple chrome extension to remove deleted files from download history at the c
 
 ![DCleaner](DCleaner.png)
 
+### [Get DCleaner](https://tinyurl.com/dcleaner-chrome)
+
 ### Check out the [demo video](https://www.youtube.com/watch?v=5aHoVO9JAOo)
 
 ## Bugs and Feedback
