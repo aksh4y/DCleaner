@@ -5,6 +5,15 @@
 window.onload = function () {
     checkCount();
     setInterval(checkCount, 10000); // Since search is limited to one per 10s
+
+    chrome.runtime.onInstalled.addListener(function (object) {
+        if(object.reason === 'install') {
+            chrome.tabs.create({url: "https://akshaysadarangani.com/DCleaner/installed"}, function (tab) {
+                console.log("New tab launched with DCleaner");
+            });
+        }
+    });
+
 };
 
 function checkCount() {
