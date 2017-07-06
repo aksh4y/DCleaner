@@ -12,6 +12,11 @@ window.onload = function () {
                 console.log("New tab launched with DCleaner");
             });
         }
+        if(object.reason === 'update') {
+            chrome.tabs.create({url: "https://akshaysadarangani.com/DCleaner/updated"}, function (tab) {
+                console.log("New tab launched with DCleaner");
+            });
+        }
     });
 
 };
